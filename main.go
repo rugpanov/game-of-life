@@ -8,12 +8,15 @@ import "fmt"
 
 func main() {
 	var fieldSize int
-	var generationNumber = 100
+	var generationNumber int
 
+	fmt.Print("Provide fields size: ")
 	_, err := fmt.Scan(&fieldSize)
 	if err != nil {
 		return
 	}
+
+	fmt.Print("Provide number of generation: ")
 	_, err = fmt.Scan(&generationNumber)
 	if err != nil {
 		return
